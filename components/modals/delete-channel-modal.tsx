@@ -40,6 +40,7 @@ export const DeleteChannelModal = () => {
       onClose();
       router.refresh();
       router.push(`/servers/${server?.id}`);
+      router.refresh();
     } catch (error) {
       console.log(error);
     } finally {
